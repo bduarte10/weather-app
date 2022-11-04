@@ -48,7 +48,8 @@ body {
   background: #ffffff0f;
   border-radius: 30px;
   margin-bottom: 40px;
-  box-shadow: 0 6px 25px 0 rgb(58 58 58 / 13%);
+  box-shadow: 0 0 8px 0px rgb(61 61 61 / 21%);
+  transition: box-shadow 0.2s linear;
 }
 
 .searchbar button {
@@ -67,6 +68,10 @@ body {
 .searchbar button:hover {
   background: #fff1;
 }
+.searchbar:focus-within {
+  outline: 1px solid #e2e2e2;
+  box-shadow: 0 0 8px 0px #fff;
+}
 .container-weather {
   text-align: center;
   color: #fff;
@@ -84,6 +89,7 @@ body {
   font-size: 20px;
   font-weight: bold;
   padding: 10px 0;
+  margin-right: 10px;
 }
 .weather-temperature {
   margin-bottom: 50px;
@@ -102,9 +108,14 @@ body {
   font-size: 20px;
 }
 .description {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 14px;
   font-weight: 300;
+}
+.description p {
+  margin-right: 5px;
 }
 .weather-info {
   display: grid;

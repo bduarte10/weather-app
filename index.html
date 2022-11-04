@@ -21,8 +21,8 @@
   <body>
     <article class="container">
       <section class="searchbar">
-        <input type="text" placeholder="Nome da cidade" />
-        <button type="submit">
+        <input id="city-input" type="text" placeholder="Nome da cidade" />
+        <button type="submit" id="search-btn">
           <img
             src="/assets/search-interface-symbol.png"
             width="20"
@@ -35,11 +35,14 @@
         <section class="locale">
           <i class="fa-solid fa-location-dot"></i>
           <h1>Curitiba</h1>
-          <img src="" alt="" />
+          <img src="https://countryflagsapi.com/png/br" alt="" width="30" />
         </section>
         <section class="weather-temperature">
           <h2>15<sup>°c</sup></h2>
-          <h3 class="description">Parcialmente nublado</h3>
+          <div class="description">
+            <p>Parcialmente nublado</p>
+            <img src="http://openweathermap.org/img/wn/04d.png" alt="" />
+          </div>
         </section>
         <section class="weather-info">
           <div class="info">
