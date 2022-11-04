@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/3be0475692.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Weather App</title>
+  </head>
+  <body>
+    <article class="container">
+      <section class="searchbar">
+        <input type="text" placeholder="Nome da cidade" />
+        <button type="submit">
+          <img
+            src="/assets/search-interface-symbol.png"
+            width="20"
+            height="20"
+            alt=""
+          />
+        </button>
+      </section>
+      <main class="container-weather">
+        <section class="locale">
+          <i class="fa-solid fa-location-dot"></i>
+          <h1>Curitiba</h1>
+          <img src="" alt="" />
+        </section>
+        <section class="weather-temperature">
+          <h2>15<sup>°c</sup></h2>
+          <h3 class="description">Parcialmente nublado</h3>
+        </section>
+        <section class="weather-info">
+          <div class="info">
+            <div class="info-title">
+              <i class="fa-solid fa-eye"></i>
+              <h4>Visibilidade</h4>
+            </div>
+            <h5>50%</h5>
+          </div>
+          <div class="info">
+            <div class="info-title">
+              <i class="fa-solid fa-temperature-three-quarters"></i>
+              <h4>S. Térmica</h4>
+            </div>
+            <h5>10°c</h5>
+          </div>
+          <div class="info">
+            <div class="info-title">
+              <i class="fa-solid fa-water"></i>
+              <h4>Umidade</h4>
+            </div>
+            <h5>80%</h5>
+          </div>
+          <div class="info">
+            <div class="info-title">
+              <i class="fa-solid fa-wind"></i>
+              <h4>Vento</h4>
+            </div>
+            <h5>10km/h</h5>
+          </div>
+        </section>
+      </main>
+    </article>
+  </body>
+</html>

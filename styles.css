@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
+input {
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  padding: 0 15px;
+  color: #fff;
+  outline: none;
+  background: #fff0;
+}
+input::placeholder {
+  color: #d4d4d4;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  background-image: url(/assets/background.png);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 100%;
+  max-width: 300px;
+  height: 100%;
+  max-height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 30px;
+  border-radius: 15px;
+  background: rgb(179 166 255 / 17%);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.searchbar {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 50px;
+  background: #ffffff0f;
+  border-radius: 30px;
+  margin-bottom: 40px;
+  box-shadow: 0 6px 25px 0 rgb(58 58 58 / 13%);
+}
+
+.searchbar button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  border: none;
+  border-radius: 0px 30px 30px 0px;
+  background-color: #fff0;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.searchbar button:hover {
+  background: #fff1;
+}
+.container-weather {
+  text-align: center;
+  color: #fff;
+}
+.locale {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.locale i {
+  font-size: 14px;
+  margin-right: 10px;
+}
+.locale h1 {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 0;
+}
+.weather-temperature {
+  margin-bottom: 50px;
+}
+
+.weather-temperature h2 {
+  position: relative;
+  font-size: 100px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  margin-right: 10px;
+}
+.weather-temperature h2 sup {
+  position: absolute;
+  top: 10px;
+  font-size: 20px;
+}
+.description {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 300;
+}
+.weather-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 15px;
+}
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.info-title {
+  display: flex;
+  align-items: center;
+}
+.info h4 {
+  font-size: 14px;
+  font-weight: 300;
+}
+.info h5 {
+  font-size: 14px;
+  font-weight: 300;
+  margin-left: 10px;
+}
+.info i {
+  font-size: 12px;
+  margin-right: 5px;
+}
+.info:nth-child(odd) {
+  padding-right: 15px;
+  border-right: 1px solid #ccc;
+}
