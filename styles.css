@@ -4,6 +4,7 @@
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
 }
+
 input {
   width: 100%;
   height: 50px;
@@ -17,6 +18,7 @@ input {
 input::placeholder {
   color: #d4d4d4;
 }
+
 body {
   width: 100%;
   height: 100vh;
@@ -92,19 +94,19 @@ body {
   margin-right: 10px;
 }
 .weather-temperature {
+  position: relative;
   margin-bottom: 50px;
 }
 
-.weather-temperature h2 {
-  position: relative;
+#temperature {
   font-size: 100px;
   font-weight: 600;
   margin-bottom: 20px;
   margin-right: 10px;
 }
-.weather-temperature h2 sup {
+.celsius {
   position: absolute;
-  top: 10px;
+  top: 15px;
   font-size: 20px;
 }
 .description {
@@ -147,4 +149,36 @@ body {
 .info:nth-child(odd) {
   padding-right: 15px;
   border-right: 1px solid #ccc;
+}
+
+.lds-dual-ring {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+.lds-dual-ring:after {
+  content: ' ';
+  display: block;
+  width: 64px;
+  height: 64px;
+
+  border-radius: 50%;
+  border: 6px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.hide {
+  display: none;
+}
+.show {
+  display: block;
 }

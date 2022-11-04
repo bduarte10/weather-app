@@ -21,7 +21,12 @@
   <body>
     <article class="container">
       <section class="searchbar">
-        <input id="city-input" type="text" placeholder="Nome da cidade" />
+        <input
+          id="city-input"
+          aria-autocomplete="none"
+          type="text"
+          placeholder="Nome da cidade"
+        />
         <button type="submit" id="search-btn">
           <img
             src="/assets/search-interface-symbol.png"
@@ -32,46 +37,52 @@
         </button>
       </section>
       <main class="container-weather">
-        <section class="locale">
+        <div id="loading-info" class="lds-dual-ring hide"></div>
+        <section id="localInfo" class="locale">
           <i class="fa-solid fa-location-dot"></i>
-          <h1>Curitiba</h1>
-          <img src="https://countryflagsapi.com/png/br" alt="" width="30" />
+          <h1 id="city">--</h1>
+          <img id="flag" src="" alt="" width="30" />
         </section>
-        <section class="weather-temperature">
-          <h2>15<sup>°c</sup></h2>
-          <div class="description">
-            <p>Parcialmente nublado</p>
-            <img src="http://openweathermap.org/img/wn/04d.png" alt="" />
+        <section id="tempInfo" class="weather-temperature">
+          <div class="temperature-container">
+            <span id="temperature">--</span>
+            <span class="celsius">°c</span>
+          </div>
+
+          <div id="tempInfo2" class="description">
+            <p id="description">--</p>
+            <img id="iconImg" src="" alt="" />
           </div>
         </section>
-        <section class="weather-info">
+
+        <section id="weatherInfo" class="weather-info">
           <div class="info">
             <div class="info-title">
               <i class="fa-solid fa-eye"></i>
               <h4>Visibilidade</h4>
             </div>
-            <h5>50%</h5>
+            <h5 id="visibility">--</h5>
           </div>
           <div class="info">
             <div class="info-title">
               <i class="fa-solid fa-temperature-three-quarters"></i>
               <h4>S. Térmica</h4>
             </div>
-            <h5>10°c</h5>
+            <h5 id="fells">--</h5>
           </div>
           <div class="info">
             <div class="info-title">
               <i class="fa-solid fa-water"></i>
               <h4>Umidade</h4>
             </div>
-            <h5>80%</h5>
+            <h5 id="humidity">--</h5>
           </div>
           <div class="info">
             <div class="info-title">
               <i class="fa-solid fa-wind"></i>
               <h4>Vento</h4>
             </div>
-            <h5>10km/h</h5>
+            <h5 id="wind">--</h5>
           </div>
         </section>
       </main>
