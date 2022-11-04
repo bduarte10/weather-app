@@ -68,3 +68,16 @@ cityInput.addEventListener('keypress', function (event) {
     getWeather(city)
   }
 })
+
+//get user location
+const getUserLocation = () => {
+  navigator.geolocation.getCurrentPosition((position) => {
+    const { latitude, longitude } = position.coords
+    const apiWeatherURL = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiWeather}&units=metric&lang=pt_br`
+
+    fetch(apiWeatherURL)
+      .then((res) => res.json())
+      .then((data) => showWeather(data))
+  })
+}
+getUserLocation()
