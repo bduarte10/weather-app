@@ -66,6 +66,7 @@ cityInput.addEventListener('keypress', function (event) {
   if (event.key === 'Enter') {
     let city = cityInput.value
     getWeather(city)
+    cityInput.value = ''
   }
 })
 
