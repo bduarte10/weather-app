@@ -4,8 +4,10 @@
   <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-como-executar">Como executar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 </p>
+<div align="center">
+  ![weather-app](https://user-images.githubusercontent.com/76459023/202335972-a5e01ea1-e1c5-4a24-9212-07607045dfd3.png)
+</div>
 
-![weather-app](https://user-images.githubusercontent.com/76459023/202335972-a5e01ea1-e1c5-4a24-9212-07607045dfd3.png)
 
 
 <br>
