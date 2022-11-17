@@ -11,7 +11,7 @@
 
 
 
-<br>
+
 ## ✨ Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
@@ -21,12 +21,12 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - Javascript
 - OpenWeather API
 
-<br>
+
 ## 💻 Projeto
 
 Aplicação de informações sobre o clima do local escolhido, com barra de buscas e acesso à localização do usuário
 
-<br>
+
 ## 🚀 Como executar
 
 - Clone o repositório
